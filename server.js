@@ -30,11 +30,10 @@ var router = express.Router();              // get an instance of the express Ro
 var products = require('./api');
 router.get('/products', products.getAllProducts);
 router.get('/products/:pid', products.getProductById);
-
-// #4 Complete the routing for POST, PUT, DELETE
+router.post('/products', products.addProduct);
 router.put('/products/:pid', products.updateProductById);
 router.delete('/products/:pid', products.deleteProductById);
-router.post('/products/:pid', products.addProduct);
+// #4 Complete the routing for POST, PUT, DELETE
 // ===============================
 
 

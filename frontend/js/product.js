@@ -9,7 +9,9 @@ $(function () {
         $("#plist").empty();
         // #12 Get all products and display as a table
         // use $.get
-        $.get("https://localhost:8080/url", function (data, status) {
+        $.get(url, function (data, status){
+            console.log(url);
+            
         });
         // ===============================
     }
@@ -31,7 +33,6 @@ $(function () {
 
         // #13 Add new products by calling api
         // use $.post
-            
         // ===============================
 
     });
